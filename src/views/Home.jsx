@@ -10,7 +10,7 @@ module.exports = function Home({ newUser }) {
         {' '}
         { newUser }
       </h1>
-      <div id="container">
+      <div className="container">
         s
       </div>
       <script src="https://newsapi.org/v2/top-headlines?country=ru&apiKey=69f4633ca37b401eab74f2217a474d14" async defer />
