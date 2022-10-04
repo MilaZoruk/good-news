@@ -6,8 +6,6 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
-      <link rel="stylesheet" href="./css/publicStyles.css" />
-      <script defer src="/js/publicScript.js" />
       <div className="main-div">
         <h1>
           Hello user,
