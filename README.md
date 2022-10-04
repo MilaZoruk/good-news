@@ -1,16 +1,47 @@
-# welcome-to-js 🥚
+# Welcome to Good News!
 
-### Release 0. Напишите код  в отдельном файле, выполнив задание из каждого пункта отдельной строкой: 
+1. General information:
 
-- Создайте пустой объект `student`.
-- Добавьте свойство firstName со значением `Petr`.
-- Добавьте свойство lastName со значением `Perviy`.
-- Измените значение свойства firstName на `Petya`.
-- Удалите свойство firstName из объекта.
+Our web application allows users to search positive only news.
 
-### Release 1. Напишите код, выполнив задание из каждого пункта отдельной строкой: 
 
-- Создайте массив `group`
-- Добавьте в него студента из предыдущего задания
-- Добавьте в массив еще 2 случайных студентов с заполненными свойствами firstName, lastName.
+## RELEASE 0: Home page
+
+-- Create registration and authorization forms.
+-- Display popular news on the page.
+
+
+## RELEASE 1: Main page
+
+-- Display popular news on the page.
+-- Add a greeting.
+-- Search form with input field where user type key words.
+-- Add a form that will allow users to exclude words they do not want to see in search results.
+-- Create User's account.
+-- Save button by clicking which users can save news into their accounts.
+
+
+
+## RELEASE 2: User's account
+
+-- Display saved news.
+
+
+## RELEASE 3: API
+
+-- Fetch an api request and display matching key words news.
+
+
+## RELEASE 4: Databases
+
+-- Create a database to store users' information.
+-- Hash passwords.
+-- Create a database to store users' favorite news.
+
+## RELEASE 5: Extra features
+
+-- Create an admin account
+-- Add a chat
+
+
 
