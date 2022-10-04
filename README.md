@@ -7,8 +7,8 @@ Our web application allows users to search positive only news.
 
 ## RELEASE 0: Home page
 
--- Create registration and authorization forms.
--- Display popular news on the page.
+Create registration and authorization forms.
+Display popular news on the page.
 
 
 ## RELEASE 1: Main page
