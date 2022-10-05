@@ -9,7 +9,6 @@ module.exports = function Login() {
       <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="/css/login.css" />
       <link rel="stylesheet" href="/css/backLogin.css" />
-
           <div className="area">
             <ul className="circles">
               <li />
