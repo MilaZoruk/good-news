@@ -17,10 +17,10 @@ const checkUser = async (req, res) => {
         req.session.newUser = checkEmail.email;
         res.redirect('/main');
       } else {
-        res.alert('Пароль не верный');
+        res.send('Пароль не верный');
       }
     } else {
-      res.alert('Пользователь не найден');
+      res.send('Пользователь не найден');
     }
   } catch (err) {
     console.log('catch');
