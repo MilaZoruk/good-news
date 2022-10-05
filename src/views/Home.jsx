@@ -5,11 +5,7 @@ const Layout = require('./Layout');
 module.exports = function Home({ newUser }) {
   return (
     <Layout newUser={newUser}>
-      <h1 className="home-greeting">
-        {/* Hello user!
-        {' '}
-        { newUser } */}
-      </h1>
+      <script defer src="/js/home.js" />
 
       <section className="section-home">
         <div className="home">
