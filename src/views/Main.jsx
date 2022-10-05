@@ -4,7 +4,6 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
-      
       <script defer src="/js/main.js" />
       <div className="main-div">
         <h1>
