@@ -30,7 +30,7 @@ https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
          <p class="card-text">${article.title}</p>
          <button class="btn-secondary like-review">
          <i class="fa fa-heart" aria-hidden="true"></i> Like
-       </button>
+        </button>
        </div>
      </div>
        `;
