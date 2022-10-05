@@ -14,7 +14,7 @@ body {
   font-family: "Source Serif Pro", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #2F2FA2;
 }
 
 /* HEADER */
@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between ;
   align-items: center;
-  background-color: #2588ec9f ;
+  background-color: #2F2FA2 ;
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -44,7 +44,7 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: antiquewhite;
   font-weight: 600;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -52,7 +52,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
- color: #2588ec9f;
+ color: #F64C72;
 
 }
 
@@ -67,7 +67,7 @@ body {
 /* HOME */
 
 .section-home {
-  background-color:  antiquewhite;
+  background-color:   #2F2FA2;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -78,8 +78,13 @@ body {
   display: grid;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: left;
   
+}
+.home-text-box{
+  margin-left: -200px;
+  margin-right: 160px;
+  margin-top: 10px;
 }
 /* Main Title "GOOD NEWS PORTAL" */
 .home-title .title-part.line-1 {
@@ -120,12 +125,12 @@ body {
 }
 
 
-
 .home-decription {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
   margin-top: 50px;
+  color: #F64C72;
 }
 
 .glow-on-hover {
@@ -134,7 +139,7 @@ body {
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
-  background: rgba(0, 213, 255, 0.269);
+  background: antiquewhite;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -159,7 +164,7 @@ body {
 }
 
 .glow-on-hover:active {
-  color: rgba(0, 213, 255, 0.269);
+  color: antiquewhite;
 }
 
 .glow-on-hover:active:after {
@@ -176,7 +181,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #2588ec9f;
+  background: antiquewhite;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -189,11 +194,11 @@ body {
 }
 
 
-
 .home-news-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
 }
 
 #div1 {
@@ -207,25 +212,30 @@ img {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   padding-top: 5px;
-  color: transparent;    
+  color: antiquewhite;    
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: linear-gradient(to right, rgb(255, 51, 0), rgb(0, 128, 53), rgb(0, 89, 255));
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  
 }
 
 #divH {
   text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
   padding-top: 5px;
-	color: transparent;    
+	color: antiquewhite;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image: linear-gradient(to right, red, rgb(0, 204, 255));
 }

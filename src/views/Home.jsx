@@ -20,34 +20,9 @@ module.exports = function Home({ newUser }) {
             <button className="glow-on-hover" type="button">WANNA STAY POSITIVE?</button>
             {/* <a href="#" className='home-btn'>Start serching news</a> */}
           </div>
-          <div>
-            <h1 id='divH'> Top news of the day </h1>
-          <div className="home-news-box">
-            {/* <div className="home-card">
-              <img src="/css/images/image1.jpeg" className="home-card-image" alt="something" />
-              <div className="card-body">
-                <p className="card-text">TITLE1</p>
-              </div>
-            </div>
-            <div className="home-card">
-              <img src="/css/images/image2.jpg" className="home-card-image" alt="something" />
-              <div className="card-body">
-                <p className="card-text">TITLE2</p>
-              </div>
-            </div>
-            <div className="home-card">
-              <img src="/css/images/image3.jpg" className="home-card-image" alt="something" />
-              <div className="card-body">
-                <p className="card-text">TITLE3</p>
-              </div>
-            </div>
-            <div className="home-card">
-              <img src="/css/images/image4.jpg" className="home-card-image" alt="something" />
-              <div className="card-body">
-                <p className="card-text">TITLE4</p>
-              </div>
-            </div> */}
-          </div>
+          <div className="borderNews">
+            <p id="divH"> Top news of the day </p>
+            <div className="home-news-box" />
           </div>
         </div>
       </section>
