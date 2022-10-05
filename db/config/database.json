@@ -3,7 +3,7 @@
     "username": "ilya2",
     "password": "123",
     "database": "News",
-    "host": "127.0.0.1",
+    "port": "5433",
     "dialect": "postgres"
   },
   "test": {
