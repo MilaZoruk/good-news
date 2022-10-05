@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.home-news-box');
 
 const req = async () => { // ! Прикепел, оказывается гугл блочит запрос
   try {
@@ -8,18 +8,41 @@ const req = async () => { // ! Прикепел, оказывается гугл
     const response = await fetch(url);
     const result = await response.json();
 
-    console.log(result);
+    const filterBy = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'санкци', 'херсон', 'киев'];
 
-    result.articles.length = 4;
-    result.articles.forEach((article) => {
+    const filteredObj = result.articles.filter((emp) => Boolean(!filterBy.some((v) => emp.title.toLowerCase().includes(v.toLowerCase()))));
+
+    console.log(filteredObj);
+
+    // const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'Херсон', 'херсон'];
+
+    // const displayArticles = [];
+    // for (let i = 0; i < result.articles.length; i++) {
+    //   let boo = true;
+    //   for (let j = 0; j < negativeWords.length; j++) {
+    //     if (result.articles[i].title.includes(negativeWords[j])) {
+    //       boo = false;
+    //       break;
+    //     }
+    //   }
+    //   if (boo) {
+    //     displayArticles.push(result.articles[i]);
+    //   }
+    // }
+    // console.log(displayArticles);
+
+    filteredObj.length = 4;
+    filteredObj.forEach((article) => {
       const newsDiv = document.createElement('div');
       newsDiv.setAttribute('className', 'news-div');
       newsDiv.innerHTML = `
-         <div className="card" style="width: 18rem;" >
+         <div id="div1" className="card" >
+         <a href="${article.url}">
          <img src="${article.urlToImage}" class="card-img-top" alt="picture">
-         <div class="card-body">
-           <p class="card-text">${article.title}</p>
-         </div>
+         </a>
+         <a href="${article.url}">
+         <h1> ${article.title} </h1>
+         </a>
        </div>
          `;
       container.appendChild(newsDiv);

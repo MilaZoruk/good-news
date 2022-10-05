@@ -20,8 +20,10 @@ module.exports = function Home({ newUser }) {
             <button className="glow-on-hover" type="button">WANNA STAY POSITIVE?</button>
             {/* <a href="#" className='home-btn'>Start serching news</a> */}
           </div>
+          <div>
+            <h1 id='divH'> Top news of the day </h1>
           <div className="home-news-box">
-            <div className="home-card">
+            {/* <div className="home-card">
               <img src="/css/images/image1.jpeg" className="home-card-image" alt="something" />
               <div className="card-body">
                 <p className="card-text">TITLE1</p>
@@ -44,9 +46,9 @@ module.exports = function Home({ newUser }) {
               <div className="card-body">
                 <p className="card-text">TITLE4</p>
               </div>
-            </div>
+            </div> */}
           </div>
-
+          </div>
         </div>
       </section>
 
