@@ -22,6 +22,17 @@ app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*'); //GET
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Accept') // + POST & JSON and...
+
+  if(req.method === 'OPTIONS') {
+    res.header('Access-Control-Allow-Methods', 'PUT, PATCH, DELETE'); // + PUT, PATCH, DELETE
+    return res.end();
+  }
+  next();
+})
+
 const { PORT, SESSION_SECRET } = process.env;
 
 const sessionConfig = {
