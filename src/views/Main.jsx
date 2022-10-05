@@ -7,7 +7,7 @@ module.exports = function Main({ newUser }) {
       <script defer src="/js/main.js" />
       <div className="main-div">
         <h1>
-          Hello user,
+          
           {' '}
           { newUser }
         </h1>
