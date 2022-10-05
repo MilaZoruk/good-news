@@ -1,4 +1,4 @@
-console.log('Hello');
+// UserAccount
 const btn = document.querySelector('#submit');
 // console.log(btn);
 btn.addEventListener('click', () => {
@@ -15,3 +15,6 @@ btn.addEventListener('click', () => {
   }
   document.body.style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
 });
+
+//Login
+\

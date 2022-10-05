@@ -12,6 +12,7 @@ module.exports = function Account({ newUser }) {
           { newUser }
           !
         </h1>
+        
         <div>
           <button type="button" id="submit" className="backcolor">Выбери себе фон, подними настроение!</button>
         </div>
