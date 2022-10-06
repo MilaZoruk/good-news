@@ -19,6 +19,7 @@ const homeRouter = require('./routes/homeRouter');
 const accRouter = require('./routes/accRouter');
 
 const addRouter = require('./routes/addRouter');
+const deleteRouter = require('./routes/deleteRouter')
 
 
 app.use(morgan('dev'));
@@ -59,7 +60,8 @@ app.use('/main', mainRouter);
 app.use('/login', loginRouter);
 app.use('/registration', regRouter);
 app.use('/account', accRouter);
-app.use('/add', addRouter)
+app.use('/add', addRouter);
+app.use('/delete', deleteRouter);
 
 
 app.get('/logout', async (req, res) => {

@@ -5,9 +5,12 @@ const Layout = require('./Layout');
 module.exports = function Account({ newUser, data }) {
   return (
     <Layout newUser={newUser}>
-      <script defer src="/js/account.js" />
       <link rel="stylesheet" href="/css/account.css" />
+      <script defer src="/js/account.js" />
+      <script defer src="/js/delete.js" />
+      
       <body className="back">
+      <div className='mainDiv'>
         { data?.map((el) => (
           <div id="card" className="card">
             <a href={el.newsUrl}>
@@ -23,8 +26,11 @@ module.exports = function Account({ newUser, data }) {
             </h1>
 
             <button id={el.id} className="btn-like">Delete</button>
-          </div>
+           </div>
+        
         ))}
+
+</div>
         <div>
           <button type="button" id="submit" className="backcolor">Выбери себе фон, подними настроение!</button>
         </div>
