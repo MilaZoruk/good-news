@@ -4,15 +4,12 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
+
+       <link rel="stylesheet" href="/css/btnLike.css" />
       <script defer src="/js/main.js" />
       <script defer src="/js/addNews.js" />
+      
       <div className="main-div">
-        <h1>
-          
-          {' '}
-          { newUser }
-        </h1>
-
         <div className="input-group mb-3">
           <form className="search">
           {/* <button className="glow-on-hover search" type="button">SEARCH</button> */}
