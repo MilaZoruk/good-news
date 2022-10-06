@@ -7,7 +7,7 @@ mainDiv.addEventListener('click', async (e) => {
   
   if (e.target.tagName === 'BUTTON' && e.target.innerHTML === 'LIKE') {
     const closestParent = e.target.closest('#card');
-    const articleUrl = closestParent.children[0].href;
+    const newsUrl = closestParent.children[0].href;
     const imageUrl = closestParent.children[0].children[0].currentSrc;
     const title = closestParent.children[1].innerText;
 
@@ -17,7 +17,7 @@ mainDiv.addEventListener('click', async (e) => {
         headers: {
           'Content-type': 'application/json',
         },
-        body: JSON.stringify({ title, articleUrl, imageUrl }),
+        body: JSON.stringify({ title, imageUrl, newsUrl }),
       });
 
       const result = await response.json();

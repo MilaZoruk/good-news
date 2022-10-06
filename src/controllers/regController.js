@@ -17,7 +17,7 @@ const addUser = async (req, res) => {
       res.send('Такой пользователь уже существует');
     } else {
       const userHash = await User.create({ login, email, password: hash });
-      req.session.newUser = userHash.login;
+      req.session.newUser = userHash.email;
     }
     res.redirect('/main');
   } catch (err) {
