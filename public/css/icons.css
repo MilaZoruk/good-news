@@ -3,8 +3,8 @@
     height: 30px;
     margin-left: 25px;
     margin-bottom: 5px;
-    box-shadow: 3px 3px 14px #d3d3d6,
-                -3px -3px 14px #fff;
+    box-shadow: 3px 3px 8px #d3d3d6,
+                -3px -3px 8px #fff;
 }
 
 .whatsUp {
@@ -12,6 +12,6 @@
     height: 30px;
     margin-left: 20px;
     margin-bottom: 5px;
-    box-shadow: 3px 3px 14px #d3d3d6,
-                -3px -3px 14px #fff;
+    box-shadow: 3px 3px 8px #d3d3d6,
+                -3px -3px 8px #fff;
 }
