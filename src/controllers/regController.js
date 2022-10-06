@@ -18,7 +18,6 @@ const addUser = async (req, res) => {
     } else {
       const userHash = await User.create({ login, email, password: hash });
       req.session.newUser = userHash.login;
-      // await User.create({ ...req.body });
     }
     res.redirect('/main');
   } catch (err) {

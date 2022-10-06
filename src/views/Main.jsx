@@ -4,12 +4,11 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
-      
       <script defer src="/js/main.js" />
       <script defer src="/js/addNews.js" />
       <div className="main-div">
         <h1>
-          Hello user,
+          
           {' '}
           { newUser }
         </h1>

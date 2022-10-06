@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
   font-family: "Source Serif Pro", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #2F2FA2;
 }
 
 /* HEADER */
@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between ;
   align-items: center;
-  background-color: rgba(0, 213, 255, 0.269) ;
+  background-color: #2F2FA2 ;
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -44,7 +44,7 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: antiquewhite;
   font-weight: 600;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -52,7 +52,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
- color: #2588ec9f;
+ color: #F64C72;
 
 }
 
@@ -64,13 +64,10 @@ body {
   background-color: #7e0aeaaa;
 }
 
-
-
-
 /* HOME */
 
 .section-home {
-  background-color: antiquewhite;
+  background-color:   #2F2FA2;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -81,24 +78,59 @@ body {
   display: grid;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: left;
   
 }
-
-.home-title {
-  font-size: 5.2rem;
+.home-text-box{
+  margin-left: -200px;
+  margin-right: 160px;
+  margin-top: 10px;
+}
+/* Main Title "GOOD NEWS PORTAL" */
+.home-title .title-part.line-1 {
+  font-size: 12rem;
   font-weight: 600;
   line-height: 1.05;
-  color: #333;
+  color: #FFFFD9;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+ 
+
+  text-shadow: #f00 1px 1px, #f00 2px 2px, #f00 3px 3px, #f00 4px 4px, #f00 5px 5px, #f00 6px 6px, #f00 7px 7px, #f00 8px 8px, #f00 9px 9px, #f00 10px 10px, #f00 11px 11px, #f00 12px 12px, #f00 13px 13px, #f00 14px 14px, #f00 15px 15px
+
+}
+
+.home-title .title-part.line-2 {
+  font-size: 12rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #FFFFD9;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 
+  text-shadow: rgb(60, 199, 56) 1px 1px, rgb(60, 199, 56) 2px 2px, rgb(60, 199, 56) 3px 3px, rgb(60,199,56) 4px 4px, rgb(60,199,56) 5px 5px, rgb(60,199,56) 6px 6px, rgb(60,199,56) 7px 7px, rgb(60,199,56) 8px 8px, rgb(60,199,56) 9px 9px, rgb(60,199,56) 10px 10px, rgb(60,199,56) 11px 11px, rgb(60,199,56) 12px 12px, rgb(60,199,56) 13px 13px, rgb(60,199,56) 14px 14px, rgb(60,199,56) 15px 15px
+
 }
 
+.home-title .title-part.line-3 {
+  font-size: 12rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #FFFFD9;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+
+  text-shadow: rgb(54, 54, 255) 1px 1px, rgb(54,54,255) 2px 2px, rgb(54,54,255) 3px 3px, rgb(54,54,255) 4px 4px, rgb(54,54,255) 5px 5px, rgb(54,54,255) 6px 6px, rgb(54,54,255) 7px 7px, rgb(54,54,255) 8px 8px, rgb(54,54,255) 9px 9px, rgb(54,54,255) 10px 10px, rgb(54,54,255) 11px 11px, rgb(54,54,255) 12px 12px, rgb(54,54,255) 13px 13px, rgb(54,54,255) 14px 14px, rgb(54,54,255) 15px 15px
+
+}
+
+
 .home-decription {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+  margin-top: 50px;
+  color: #F64C72;
 }
 
 .glow-on-hover {
@@ -106,8 +138,8 @@ body {
   height: 50px;
   border: none;
   outline: none;
-  color: #fff;
-  background: #111;
+  color: rgb(0, 0, 0);
+  background: antiquewhite;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -132,7 +164,7 @@ body {
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: antiquewhite;
 }
 
 .glow-on-hover:active:after {
@@ -149,7 +181,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: antiquewhite;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -162,14 +194,11 @@ body {
 }
 
 
-.home-card-image {
-  width: 100%;
-}
-
 .home-news-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
 }
 
 
@@ -188,6 +217,17 @@ body {
 }
 
 
+}
+
+#div1 {
+  margin: 10px;
+}
+
+img {
+  width: 424px;
+  height: 252px;
+  border-radius: 20px;
+  
 .news-container {
   
   margin: 0 auto;
@@ -200,10 +240,7 @@ body {
   justify-self: center;
   align-self: center;
 
-
-  
 }
-
 
 #card {
   width: 400px;
@@ -214,6 +251,7 @@ body {
   align-items: center;
   align-self: center;
  
+
 }
 img {
   width: 400px;
@@ -239,10 +277,38 @@ a {
   background-color: #F64C72;
 }
 
+h1 {
+  text-align: left;
+  font-size: 18px;
+  padding-top: 5px;
+  color: antiquewhite;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, rgb(255, 51, 0), rgb(0, 128, 53), rgb(0, 89, 255));
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 25px;
 
 .card-img-main {
   border-radius: 10px;
+
 }
 
+a {
+  text-decoration: none;
+  
+}
+
+
+#divH {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  padding-top: 5px;
+	color: antiquewhite;    
+	-webkit-background-clip: text;
+	background-clip: text;
+}
 
 /* BTN LIKE */

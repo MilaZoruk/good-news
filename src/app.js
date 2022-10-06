@@ -15,13 +15,28 @@ const mainRouter = require('./routes/mainRouter');
 const loginRouter = require('./routes/loginRouter');
 const regRouter = require('./routes/regRouter');
 const homeRouter = require('./routes/homeRouter');
+
+const accRouter = require('./routes/accRouter');
+
 const addRouter = require('./routes/addRouter');
+
 
 app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*'); //GET
+//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Accept') // + POST & JSON and...
+
+//   if(req.method === 'OPTIONS') {
+//     res.header('Access-Control-Allow-Methods', 'PUT, PATCH, DELETE'); // + PUT, PATCH, DELETE
+//     return res.end();
+//   }
+//   next();
+// })
 
 const { PORT, SESSION_SECRET } = process.env;
 
@@ -43,7 +58,9 @@ app.use('/', homeRouter);
 app.use('/main', mainRouter);
 app.use('/login', loginRouter);
 app.use('/registration', regRouter);
+app.use('/account', accRouter);
 app.use('/add', addRouter)
+
 
 app.get('/logout', async (req, res) => {
   console.log(req.query);

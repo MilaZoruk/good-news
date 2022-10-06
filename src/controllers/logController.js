@@ -1,7 +1,7 @@
+const bcrypt = require('bcrypt');
 const renderTemplate = require('../lib/renderTemplate');
 const Login = require('../views/Login');
 const { User } = require('../../db/models');
-const bcrypt = require('bcrypt');
 
 const renderLogin = (req, res) => {
   renderTemplate(Login, null, res);
@@ -13,7 +13,6 @@ const checkUser = async (req, res) => {
     if (checkEmail) {
       const checkPass = await bcrypt.compare(req.body.password, checkEmail.password);
       if (checkPass) {
-      // if (req.body.password === checkEmail.password) {
         req.session.newUser = checkEmail.email;
         res.redirect('/main');
       } else {
