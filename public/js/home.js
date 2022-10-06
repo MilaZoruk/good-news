@@ -41,7 +41,7 @@ const req = async () => { // ! Прикепел, оказывается гугл
          <img src="${article.urlToImage}" class="card-img-top" alt="picture">
          </a>
          <a href="${article.url}">
-         <h1> ${article.title} </h1>
+         <h2> ${article.title} </h2>
          </a>
        </div>
          `;

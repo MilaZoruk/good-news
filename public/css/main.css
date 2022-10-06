@@ -30,8 +30,8 @@ body {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   margin-right: 15px;
   margin-top: 5px;
 }
@@ -222,7 +222,6 @@ body {
 }
 
 
-}
 
 #div1 {
   margin: 10px;
@@ -232,6 +231,7 @@ img {
   width: 424px;
   height: 252px;
   border-radius: 20px;
+}
   
 .news-container {
   
@@ -258,6 +258,7 @@ img {
  
 
 }
+
 img {
   width: 400px;
   height: 200px;
@@ -268,7 +269,6 @@ h1 {
   text-align: center;
   padding-top: 5px;
   margin-left: -10px;
-
 }
 
 a {
@@ -294,17 +294,31 @@ h1 {
   font-style: normal;
   font-weight: 200;
   line-height: 25px;
+}
+
+h2 {
+text-align: center;
+font-size: 18px;
+  padding-top: 5px;
+  margin-top: 10px;
+  color: antiquewhite;    
+	-webkit-background-clip: text;
+	background-clip: text;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight:100;
+  line-height: 25px;
+
+}
 
 .card-img-main {
   border-radius: 10px;
-
 }
 
 a {
   text-decoration: none;
   
 }
-
 
 #divH {
   text-align: center;
