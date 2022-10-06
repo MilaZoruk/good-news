@@ -10,7 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+      },
+      imageUrl: {
+        type: Sequelize.STRING,
+      },
+      newsUrl: {
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,

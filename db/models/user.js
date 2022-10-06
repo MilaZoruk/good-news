@@ -11,12 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsToMany(models.NewsSave, { through: models.Connect, foreignKey: 'userId' });
     }
   }
   User.init({
     login: DataTypes.STRING,
     email: DataTypes.STRING,
-    password: DataTypes.STRING
+    password: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'User',
