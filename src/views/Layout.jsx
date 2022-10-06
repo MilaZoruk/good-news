@@ -61,39 +61,7 @@ module.exports = function Layout({ children, newUser }) {
 }
           </ul>
 
-          {/* <div className="container-fluid">
-            <a className="navbar-brand" href="/">Home</a>
-
-            { newUser ? (
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <div className="nav-link">
-                      Привет,
-                      {' '}
-                      { newUser }
-                      {' '}
-                      !
-                    </div>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/logout">Выйти!</a>
-                  </li>
-                </ul>
-              </div>
-            ) : ('')}
-            {' '}
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link" href="/login">Login</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/registration">Registration</a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
+         
         </nav>
       </header>
       <body>

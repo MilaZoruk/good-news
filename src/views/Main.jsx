@@ -6,6 +6,7 @@ module.exports = function Main({ newUser }) {
     <Layout newUser={newUser}>
       
       <script defer src="/js/main.js" />
+      <script defer src="/js/addNews.js" />
       <div className="main-div">
         <h1>
           Hello user,
@@ -15,13 +16,14 @@ module.exports = function Main({ newUser }) {
 
         <div className="input-group mb-3">
           <form className="search">
-            <button className="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
+          {/* <button className="glow-on-hover search" type="button">SEARCH</button> */}
+            <button className="btn btn-outline-secondary btn-search glow-on-hover search" type="submit" id="button-addon1">SEARCH</button>
             <input name="key-word" type="text" className="input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
           </form>
         </div>
 
         <div className="news-container">
-          <ul className="news-list"></ul>
+          
         </div>
 
       </div>
