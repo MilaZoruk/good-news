@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Connect.init({
     userId: DataTypes.INTEGER,
-    newsId: DataTypes.INTEGER
+    newsId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Connect',

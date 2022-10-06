@@ -1,7 +1,7 @@
-'use strict';
 const {
-  Model
+  Model,
 } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class NewsSave extends Model {
     /**
@@ -11,10 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsToMany(models.User, { through: models.Connect, foreignKey: 'newsId' });
     }
   }
   NewsSave.init({
-    title: DataTypes.STRING
+    title: DataTypes.STRING,
+    imageUrl: DataTypes.STRING,
+    newsUrl: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'NewsSave',
