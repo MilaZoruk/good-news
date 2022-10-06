@@ -45,6 +45,8 @@ module.exports = function Login() {
               <p>Don't have an account? </p>
               {' '}
               <p><a href="/registration">Registration</a></p>
+            
+            <div className="error"></div>
 
             </div>
           </div>

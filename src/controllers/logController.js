@@ -13,7 +13,6 @@ const checkUser = async (req, res) => {
     if (checkEmail) {
       const checkPass = await bcrypt.compare(req.body.password, checkEmail.password);
       if (checkPass) {
-      // if (req.body.password === checkEmail.password) {
         req.session.newUser = checkEmail.email;
         res.redirect('/main');
       } else {
