@@ -13,15 +13,28 @@ module.exports = function Layout({ children, newUser }) {
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/icons.css" />
 
-        <title>Privet</title>
+        <title>Good News Portal</title>
       </head>
       <header className="header">
-        <img className="logo" src="" alt="OUR LOGO" />
+        <ul>
+          <img className="logo" src="/css/images/logo.png" alt="OUR LOGO" />
+          <a href="https://web.telegram.org/k/">
+            <img className="telegram" src="/css/images/Telegram(1).png" />
+          </a>
+          <a href='https://www.whatsapp.com/?lang=ru'>
+            <img className="whatsUp" src="/css/images/WhatsApp(1).png" />
+          </a>
+        </ul>
+        {/* <img className="logo" src="" alt="OUR LOGO" />
+        <img className="telegram" src="/css/images/free-icon-telegram-3670070.png" />
+        <img className="whatsUp" src="/css/images/free-icon-whatsapp-3621438.png" /> */}
         <nav className="main-nav">
           <ul className="main-nav-list">
 
             <li><a className="main-nav-link" href="/">Home</a></li>
+            <li><a className="main-nav-link" href="/main">News</a></li>
 
             { newUser ? (
               <>

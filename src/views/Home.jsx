@@ -17,7 +17,9 @@ module.exports = function Home({ newUser }) {
             </h1>
             {/* <news portal </h2> */}
             <p className="home-decription"> Enjoy discovering the world with our free of charge news application. Seacrh from more then 80 news sources and save your favorite articles in one click! </p>
-            <button className="glow-on-hover" type="button">WANNA STAY POSITIVE?</button>
+            <a href="/registration">
+              <button className="glow-on-hover" type="button">WANNA STAY POSITIVE?</button>
+            </a>
             {/* <a href="#" className='home-btn'>Start serching news</a> */}
           </div>
           <div className="borderNews">
