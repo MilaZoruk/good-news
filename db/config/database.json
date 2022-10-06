@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "bee",
+    "username": "miladmin",
     "password": "123",
     "database": "News",
-    "port": "5433",
+    "port": "5432",
     "dialect": "postgres"
   },
 

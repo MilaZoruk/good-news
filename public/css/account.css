@@ -1,17 +1,19 @@
 body{
-    background: #2F2FA2;
+    background: #2f2fa2ee;
 }
 .backcolor {
     width: 220px;
     height: 50px;
     border: none;
     outline: none;
-    color: rgb(0, 0, 0);
-    background: antiquewhite;
+    color: rgb(255, 255, 255);
+    background: #7e0aeaaa;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    margin-left: 27px;
+    margin-top: 10px;
   }
   
   .backcolor:before {
@@ -32,7 +34,7 @@ body{
   }
   
   .backcolor:active {
-    color: antiquewhite;
+    color: #7e0aeaaa;
   }
   
   .backcolor:active:after {
@@ -49,7 +51,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: antiquewhite;
+    background:#7e0aeaaa;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -60,3 +62,78 @@ body{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
   }
+
+  .mainDiv {
+  
+    margin: 0 auto;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+  
+  }
+  
+  #card {
+    width: 400px;
+    min-height: 200px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    align-self:end;
+  }
+
+  img {
+    width: 400px;
+    height: 200px;
+  }
+  
+  .btn-like{
+    width: 80px;
+    height: 30px;
+    background-color: #F64C72;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0; 
+	transition: all 500ms ease;
+  margin-top: 10px;
+}
+
+.btn-like:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 28px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+
+.btn-like:hover:before {
+	width: 100%;
+}
+
+.btnPos{
+    min-height: 80px;}
+
+a{
+    font-family: "Source Serif Pro", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 5px;
+}
+
+a:hover{
+    color: black;
+}

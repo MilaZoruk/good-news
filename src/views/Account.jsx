@@ -10,6 +10,9 @@ module.exports = function Account({ newUser, data }) {
       <script defer src="/js/delete.js" />
       
       <body className="back">
+        <div>
+          <button type="button" id="submit" className="backcolor">Choose your background!</button>
+        </div>
       <div className='mainDiv'>
         { data?.map((el) => (
           <div id="card" className="card">
@@ -17,13 +20,14 @@ module.exports = function Account({ newUser, data }) {
               <img src={el.imageUrl} className="card-img-main" alt="picture" />
             </a>
 
-            <h1>
+            <div id="btnPos">
               <a className="title" href="${article.url}">
-              
+
                 {el.title}
               </a>
+              </div>
 
-            </h1>
+
 
             <button id={el.id} className="btn-like">Delete</button>
            </div>
@@ -31,9 +35,6 @@ module.exports = function Account({ newUser, data }) {
         ))}
 
 </div>
-        <div>
-          <button type="button" id="submit" className="backcolor">Выбери себе фон, подними настроение!</button>
-        </div>
       </body>
     </Layout>
   );
