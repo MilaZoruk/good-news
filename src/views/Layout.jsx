@@ -22,6 +22,7 @@ module.exports = function Layout({ children, newUser }) {
           <ul className="main-nav-list">
 
             <li><a className="main-nav-link" href="/">Home</a></li>
+
             { newUser ? (
               <>
                 <li>
@@ -52,6 +53,7 @@ module.exports = function Layout({ children, newUser }) {
                 </>
               )}
           </ul>
+
         </nav>
       </header>
       <body>
