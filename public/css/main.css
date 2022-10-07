@@ -85,11 +85,13 @@ body {
   align-items: left;
   
 }
+
 .home-text-box{
   margin-left: -200px;
   margin-right: 160px;
   margin-top: 10px;
 }
+
 /* Main Title "GOOD NEWS PORTAL" */
 .home-title .title-part.line-1 {
   font-size: 12rem;
