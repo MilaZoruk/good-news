@@ -46,8 +46,6 @@ module.exports = function Registration() {
 
           <div className="button-form" />
           <button type="submit" className="btn btn-primary" id="submit">Submit</button>
-        </form>
-      </div>
       <svg className="gegga">
         <defs>
           <filter id="gegga">
@@ -84,6 +82,8 @@ module.exports = function Registration() {
         />
         <circle className="strecken" cx="100" cy="100" r="64" />
       </svg>
+        </form>
+      </div>
     </Layout>
   );
 };

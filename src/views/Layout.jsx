@@ -16,17 +16,17 @@ module.exports = function Layout({ children, newUser }) {
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/icons.css" />
         <link rel="stylesheet" href="/css/headerAdaptiv.css" />
+        <script defer src="/js/clickCat.js" />
         
-
-        <title>Good News Portal</title>
+             <title>Good News Portal</title>
       </head>
       <header className="header">
         <ul>
           <img className="logo" src="/css/images/logo.png" alt="OUR LOGO" />
-          <a href="https://web.telegram.org/k/">
+          <a href="https://telegram.me/share/url?url=http://localhost:3000">
             <img className="telegram" src="/css/images/Telegram(1).png" />
           </a>
-          <a href='https://www.whatsapp.com/?lang=ru'>
+          <a href="https://wa.me/?text=http://localhost:3000">
             <img className="whatsUp" src="/css/images/WhatsApp(1).png" />
           </a>
         </ul>

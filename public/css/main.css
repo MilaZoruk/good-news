@@ -13,7 +13,7 @@ body {
   font-family: "Source Serif Pro", sans-serif;
   line-height: 1;
   font-weight: 400;
- background-color: rgba(250, 235, 215, 0.192);
+  background-color:   #2f2fa2ee;
 }
 
 /* HEADER */
@@ -71,7 +71,6 @@ body {
 /* HOME */
 
 .section-home {
-  background-color:   #2f2fa2ee;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -85,11 +84,13 @@ body {
   align-items: left;
   
 }
+
 .home-text-box{
   margin-left: -200px;
   margin-right: 160px;
   margin-top: 10px;
 }
+
 /* Main Title "GOOD NEWS PORTAL" */
 .home-title .title-part.line-1 {
   font-size: 12rem;
@@ -327,3 +328,14 @@ a {
 }
 
 /* BTN LIKE */
+
+.clickCat {
+  visibility: hidden;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  margin-left: 230px;
+  margin-bottom: 850px;
+  margin-top: -35px;
+}
+
