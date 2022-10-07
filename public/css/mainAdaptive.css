@@ -1,0 +1,147 @@
+@media(max-width: 1406px) {
+
+  
+    .input-group {
+
+     margin-left: 50rem;
+      
+    }
+
+    .news-container {
+     
+      max-width: 75vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-content: center;
+      gap: 15px;
+      justify-self: center;
+      align-self: center;
+    
+    }
+
+  }  
+
+
+  @media(max-width: 1105px) {
+
+  
+    .input-group {
+
+     margin-left: 30rem;
+      
+    }
+
+    .news-container {
+      max-width: 60vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-content: center;
+      gap: 10px;
+      justify-self: center;
+      align-self: center;
+    
+    }
+
+  }  
+
+  @media(max-width: 742px) {
+
+  
+    .input-group {
+     margin-top: 2rem;
+     margin-left: 6rem;
+      
+    }
+
+    .search {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .input {
+      margin-left: 0.5rem;
+      width: 20rem;
+      height: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      border-radius: 9px;
+      padding: 8px;
+    }
+
+    img {
+      width: 350px;
+      height: 180px;
+      border-radius: 20px;
+    }
+
+
+  }  
+
+
+  @media(max-width: 580px) {
+
+  
+  
+
+    .input-group {
+      margin-top: 2rem;
+      margin-left: 6rem;
+       
+     }
+ 
+     .search {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+ 
+     .input {
+       margin-left: 0.5rem;
+       width: 20rem;
+       height: 4rem;
+       margin-top: 2rem;
+       margin-bottom: 5rem;
+       border-radius: 9px;
+       padding: 8px;
+     }
+ 
+
+  }  
+
+  @media(max-width: 410px) {
+
+  
+  
+
+    .input-group {
+      margin-top: 2rem;
+      margin-left: 2rem;
+       
+     }
+ 
+     .search {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+ 
+     .input {
+       margin-left: 0.5rem;
+       width: 20rem;
+       height: 4rem;
+       margin-top: 2rem;
+       margin-bottom: 5rem;
+       border-radius: 9px;
+       padding: 8px;
+     }
+ 
+   
+
+  }  
+
