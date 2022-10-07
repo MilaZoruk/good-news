@@ -12,8 +12,11 @@ module.exports = function Layout({ children, newUser }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
+        
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/icons.css" />
+        <link rel="stylesheet" href="/css/headerAdaptiv.css" />
+        
 
         <title>Good News Portal</title>
       </head>

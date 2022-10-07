@@ -9,6 +9,7 @@ module.exports = function Main({ newUser }) {
 
 
        <link rel="stylesheet" href="/css/btnLike.css" />
+       <link rel="stylesheet" href="/css/mainAdaptive.css" />
 
       <script defer src="/js/main.js" />
       <script defer src="/js/addNews.js" />
