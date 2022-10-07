@@ -4,11 +4,14 @@ const req = async () => { // ! Прикепел, оказывается гугл
   try {
     const apiKey = '69f4633ca37b401eab74f2217a474d14';
     const url = `
-    https://newsapi.org/v2/top-headlines?country=ru&apiKey=${apiKey}`;
+    https://newsapi.org/v2/everything?q=кино&sortBy=popularity&apiKey=${apiKey}`;
+    // https://newsapi.org/v2/top-headlines?country=ru&category=positive&apiKey=${apiKey}`;
     const response = await fetch(url);
     const result = await response.json();
 
-    const filterBy = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'санкци', 'херсон', 'киев'];
+    console.log(result);
+
+    const filterBy = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'санкци', 'херсон', 'киев', 'драка'];
 
     const filteredObj = result.articles.filter((emp) => Boolean(!filterBy.some((v) => emp.title.toLowerCase().includes(v.toLowerCase()))));
 
