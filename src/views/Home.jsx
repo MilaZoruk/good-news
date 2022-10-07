@@ -7,6 +7,7 @@ module.exports = function Home({ newUser }) {
     <Layout newUser={newUser}>
       <link rel="stylesheet" href="/css/main.css" />
       <link rel="stylesheet" href="/css/homeAdaptive.css" />
+      <link rel="stylesheet" href="/css/headerAdaptiv.css" />
       <script defer src="/js/clickCat.js" />
       <script defer src="/js/home.js" />
       

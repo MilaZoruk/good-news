@@ -1,6 +1,6 @@
 const mainDiv = document.querySelector('.mainDiv');
 mainDiv.addEventListener('click', async (e) => {
-  e.preventDefault();
+
   if (e.target.tagName === 'BUTTON') {
     console.log(e.target.parentNode);
     console.log(e.target.parentNode.parentNode);

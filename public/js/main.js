@@ -1,3 +1,4 @@
+
 const searchForm = document.querySelector('.search');
 const inputGood = document.querySelector('input');
 const newsMainDiv = document.querySelector('.news-container');
@@ -52,21 +53,17 @@ searchForm.addEventListener('submit', async (e) => {
       const newsDiv = document.createElement('div');
       newsDiv.setAttribute('className', 'news-div');
       newsDiv.innerHTML = `
-      
-       <div id="card" className="card" >
-         <a  href="${article.url}">
-            <img src="${article.urlToImage}" class="card-img-main" alt="picture">
-         </a>
-       
-         <div id="btnPos">
-         <a className="title" href="${article.url}">
-         ${article.title}
-         </a>
-         </div>
-    
-        <button id="btn-like">LIKE</button>
-      
-        </div>
+      <div id="card" className="card" >
+      <a href="${article.url}">
+         <img src="${article.urlToImage}" class="card-img-main" alt="picture">
+      </a>
+      <div id="btnPos">
+      <a href="${article.url}" className="title">
+      ${article.title}
+      </a>
+      </div>
+     <button id="btn-like">LIKE</button>
+     </div>
        `;
       newsMainDiv.appendChild(newsDiv);
       inputGood.value = '';
@@ -78,4 +75,5 @@ searchForm.addEventListener('submit', async (e) => {
 });
 
 {/* <button><a className="btn-like">LIKE</a></button> */}
+
 

@@ -7,7 +7,7 @@ module.exports = function Main({ newUser }) {
 
       <link rel="stylesheet" href="/css/spinner.css" />
 
-
+      
        <link rel="stylesheet" href="/css/btnLike.css" />
        <link rel="stylesheet" href="/css/mainAdaptive.css" />
 
@@ -15,6 +15,8 @@ module.exports = function Main({ newUser }) {
       <script defer src="/js/addNews.js" />
       
       <div className="main-div">
+  
+     
         <div className="input-group mb-3">
           <form className="search">
           {/* <button className="glow-on-hover search" type="button">SEARCH</button> */}
@@ -26,7 +28,7 @@ module.exports = function Main({ newUser }) {
         <div id="spinner"></div>
 
         <div className="news-container">
-          
+       
         </div>
 
       </div>

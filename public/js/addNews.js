@@ -3,7 +3,7 @@ const mainDiv = document.querySelector('.news-container');
 
 
 mainDiv.addEventListener('click', async (e) => {
-  e.preventDefault();
+  //e.preventDefault();
   
   if (e.target.tagName === 'BUTTON' && e.target.innerHTML === 'LIKE') {
     const closestParent = e.target.closest('#card');

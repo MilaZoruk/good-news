@@ -242,6 +242,7 @@ img {
   gap: 20px;
   justify-self: center;
   align-self: center;
+ 
 
 }
 
@@ -270,6 +271,7 @@ h1 {
 
 a {
   text-decoration: none;
+  color: antiquewhite;
 }
 
 
