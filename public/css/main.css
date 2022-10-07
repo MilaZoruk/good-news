@@ -327,3 +327,12 @@ a {
 }
 
 /* BTN LIKE */
+.clickCat {
+  visibility: hidden;
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  margin-left: 230px;
+  margin-bottom: 850px;
+  margin-top: -35px;
+}
