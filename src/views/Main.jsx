@@ -5,7 +5,11 @@ module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
 
+      <link rel="stylesheet" href="/css/spinner.css" />
+
+
        <link rel="stylesheet" href="/css/btnLike.css" />
+
       <script defer src="/js/main.js" />
       <script defer src="/js/addNews.js" />
       
@@ -17,6 +21,8 @@ module.exports = function Main({ newUser }) {
             <input name="key-word" type="text" className="input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
           </form>
         </div>
+
+        <div id="spinner"></div>
 
         <div className="news-container">
           
