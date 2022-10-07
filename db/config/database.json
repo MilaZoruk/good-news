@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "miladmin",
+    "username": "ilya2", 
     "password": "123",
     "database": "News",
     "port": "5432",
