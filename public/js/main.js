@@ -58,12 +58,14 @@ searchForm.addEventListener('submit', async (e) => {
             <img src="${article.urlToImage}" class="card-img-main" alt="picture">
          </a>
        
-         
-         <h1><a className="title"  href="${article.url}">
-          ${article.title}
-          </a></h1>
-        
-          <button className="btn-like">LIKE</button>
+         <div id="btnPos">
+         <a className="title" href="${article.url}">
+         ${article.title}
+         </a>
+         </div>
+    
+        <button id="btn-like">LIKE</button>
+      
         </div>
        `;
       newsMainDiv.appendChild(newsDiv);

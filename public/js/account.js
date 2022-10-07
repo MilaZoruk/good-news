@@ -15,4 +15,3 @@ btn.addEventListener('click', () => {
   }
   document.body.style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
 });
-

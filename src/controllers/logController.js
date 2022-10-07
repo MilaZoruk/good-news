@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const renderTemplate = require('../lib/renderTemplate');
 const Login = require('../views/Login');
 const { User } = require('../../db/models');
+const Wrong = require('../views/Wrong')
 
 const renderLogin = (req, res) => {
   renderTemplate(Login, null, res);
@@ -16,10 +17,12 @@ const checkUser = async (req, res) => {
         req.session.newUser = checkEmail.email;
         res.redirect('/main');
       } else {
-        res.send('Пароль не верный');
+        const wrong = { title: 'Wrong password' };
+        renderTemplate(Login, wrong, res);
       }
     } else {
-      res.send('Пользователь не найден');
+      const wrong = { title: 'User is not found' };
+      renderTemplate(Login, wrong, res);
     }
   } catch (err) {
     console.log('catch');

@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function Login() {
+module.exports = function Login(props) {
   return (
     <Layout>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,11 +45,13 @@ module.exports = function Login() {
               <p>Don't have an account? </p>
               {' '}
               <p><a href="/registration">Registration</a></p>
-            
+
             <div className="error"></div>
+  
 
             </div>
           </div>
+              <p className="errorMesseg">{props.title}</p>
         </form>
       </div>
     </Layout>

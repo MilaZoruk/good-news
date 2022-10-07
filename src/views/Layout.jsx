@@ -38,21 +38,22 @@ module.exports = function Layout({ children, newUser }) {
 
             { newUser ? (
               <>
+                
+                <li className="nav-item">
+                  <a className="main-nav-link" href="/account">Account</a>
+                </li>
+                <li>
+                  {' '}
+                  <a className="main-nav-link" href="/logout">Logout</a>
+                </li>
                 <li>
                   <a className="main-nav-link nav-link-highlight" href="#">
-                    Привет,
+                    Hey,
                     {' '}
                     {newUser}
                     {' '}
                   </a>
-                </li>
-                <li>
-                  {' '}
-                  <a className="main-nav-link" href="/logout">Выйти</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/account">Личный кабинет</a>
-                </li>
+                  </li>
               </>
             )
               : (
