@@ -1,16 +1,17 @@
 const searchForm = document.querySelector('.search');
 const inputGood = document.querySelector('input');
 const newsMainDiv = document.querySelector('.news-container');
+const spinner = document.querySelector("#spinner");
 
 
 // newsList.style.listStyle = 'none';
 searchForm.addEventListener('submit', async (e) => {
-  if (inputGood.value == '') {
-    alert('Введите запрос');
+  if (inputGood.value === '' || inputGood.value === 'смерть' || inputGood.value === 'убийство' || inputGood.value === 'война' || inputGood.value === 'тоска' || inputGood.value === 'болезнь') {
+    alert('Нееее, введи что нибудь хорошее');
     return;
   }
-  // newsMainDiv.innerHTML = '';
   e.preventDefault();
+  spinner.style.visibility = 'visible';
   try {
     const apiKey = '6b352aada06441d18359493c93757e14';
 
@@ -25,13 +26,13 @@ searchForm.addEventListener('submit', async (e) => {
     result.articles.length = 25;
    
 
-    const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс'];
+    const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'кокаи', 'застрели', 'Казахста', 'уби', 'кровь', 'Зеленский', 'хабиб', 'мобилизаци', 'ган'];
 
     const displayArticles = [];
     for (let i = 0; i < result.articles.length; i++) {
       let boo = true;
       for (let j = 0; j < negativeWords.length; j++) {
-        if (result.articles[i].title.includes(negativeWords[j])) {
+        if (result.articles[i].title.toLowerCase().includes(negativeWords[j].toLowerCase())) {
           boo = false;
           break;
         }
@@ -42,6 +43,8 @@ searchForm.addEventListener('submit', async (e) => {
     }
 
     //console.log({displayArticles});
+
+
 
     displayArticles.length = 15;
 
@@ -65,6 +68,7 @@ searchForm.addEventListener('submit', async (e) => {
        `;
       newsMainDiv.appendChild(newsDiv);
       inputGood.value = '';
+      spinner.style.visibility = 'hidden';
     });
   } catch (error) {
     console.error(error);

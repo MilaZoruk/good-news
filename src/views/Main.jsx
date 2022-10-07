@@ -4,6 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser }) {
   return (
     <Layout newUser={newUser}>
+      <link rel="stylesheet" href="/css/spinner.css" />
       <script defer src="/js/main.js" />
       <script defer src="/js/addNews.js" />
       <div className="main-div">
@@ -20,6 +21,8 @@ module.exports = function Main({ newUser }) {
             <input name="key-word" type="text" className="input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
           </form>
         </div>
+
+        <div id="spinner"></div>
 
         <div className="news-container">
           
