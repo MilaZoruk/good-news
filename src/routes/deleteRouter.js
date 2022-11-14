@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { BelongsTo } = require('sequelize');
+
 const { NewsSave, Connect, User  } = require('../../db/models');
 
 router.delete('/', async (req, res) => {

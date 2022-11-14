@@ -7,11 +7,13 @@ const spinner = document.querySelector("#spinner");
 
 // newsList.style.listStyle = 'none';
 searchForm.addEventListener('submit', async (e) => {
+  
   if (inputGood.value === '' || inputGood.value === 'смерть' || inputGood.value === 'убийство' || inputGood.value === 'война' || inputGood.value === 'тоска' || inputGood.value === 'болезнь') {
     alert('Нееее, введи что нибудь хорошее');
     return;
   }
   e.preventDefault();
+  newsMainDiv.innerHTML = '';
   spinner.style.visibility = 'visible';
   try {
     const apiKey = '6b352aada06441d18359493c93757e14';
