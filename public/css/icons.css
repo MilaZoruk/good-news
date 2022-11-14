@@ -1,0 +1,17 @@
+.telegram {
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+/* box-shadow: 3px 3px 8px #d3d3d6,
+            -3px -3px 8px #fff; */
+}
+
+.whatsUp {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    /* box-shadow: 3px 3px 8px #d3d3d6,
+                -3px -3px 8px #fff; */
+}
