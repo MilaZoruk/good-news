@@ -4,12 +4,14 @@
 
 Our web application allows users to search positive only news.
 
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## RELEASE 0: Home page
 
 <br>Create registration and authorization forms.
 <br>Display popular news on the page.
-
 
 ## RELEASE 1: Main page
 
@@ -20,17 +22,13 @@ Our web application allows users to search positive only news.
 <br>Create User's account.
 <br>Save button by clicking which users can save news into their accounts.
 
-
-
 ## RELEASE 2: User's account
 
 <br>Display saved news.
 
-
 ## RELEASE 3: API
 
 <br>Fetch an api request and display matching key words news.
-
 
 ## RELEASE 4: Databases
 
@@ -42,6 +40,18 @@ Our web application allows users to search positive only news.
 
 <br>Create an admin account
 <br>Add a chat
+
+## TECH STACK
+
+**Frontend:** JavaScript, React, Fetch API, HTML, CSS 
+
+**Backend:** PostgreSQL, DBeaver-ce, Sequelize, Session
+
+## AUTHORS
+
+- [@Lensorf](https://github.com/Lensorf)
+- [@Aleks2580](https://github.com/Aleks2580)
+- [@MilaZoruk](https://github.com/MilaZoruk)
 
 
 
