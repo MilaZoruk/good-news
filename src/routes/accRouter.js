@@ -1,6 +1,5 @@
 const express = require('express');
-const { renderAcc } = require('../controllers/accController')
-
+const { renderAcc } = require('../controllers/accController');
 
 const router = express.Router();
 

@@ -9,20 +9,20 @@ module.exports = function Login(props) {
       <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="/css/login.css" />
       <link rel="stylesheet" href="/css/backLogin.css" />
-          <div className="area">
-            <ul className="circles">
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-              <li />
-            </ul>
-          </div>
+      <div className="area">
+        <ul className="circles">
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
+      </div>
       <div className="login-box">
 
         <h2>Login</h2>
@@ -46,12 +46,11 @@ module.exports = function Login(props) {
               {' '}
               <p><a href="/registration">Registration</a></p>
 
-            <div className="error"></div>
-  
+              <div className="error" />
 
             </div>
           </div>
-              <p className="errorMesseg">{props.title}</p>
+          <p className="errorMesseg">{props.title}</p>
         </form>
       </div>
     </Layout>

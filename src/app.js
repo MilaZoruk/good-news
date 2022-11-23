@@ -8,7 +8,6 @@ const morgan = require('morgan');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 const { sequelize } = require('../db/models');
-const renderTemplate = require('./lib/renderTemplate');
 
 const app = express();
 const mainRouter = require('./routes/mainRouter');
@@ -19,25 +18,13 @@ const homeRouter = require('./routes/homeRouter');
 const accRouter = require('./routes/accRouter');
 
 const addRouter = require('./routes/addRouter');
-const deleteRouter = require('./routes/deleteRouter')
-
+const deleteRouter = require('./routes/deleteRouter');
 
 app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*'); //GET
-//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Accept') // + POST & JSON and...
-
-//   if(req.method === 'OPTIONS') {
-//     res.header('Access-Control-Allow-Methods', 'PUT, PATCH, DELETE'); // + PUT, PATCH, DELETE
-//     return res.end();
-//   }
-//   next();
-// })
 
 const { PORT, SESSION_SECRET } = process.env;
 
@@ -62,7 +49,6 @@ app.use('/registration', regRouter);
 app.use('/account', accRouter);
 app.use('/add', addRouter);
 app.use('/delete', deleteRouter);
-
 
 app.get('/logout', async (req, res) => {
   console.log(req.query);
@@ -89,16 +75,3 @@ app.listen(PORT, async () => {
   }
   console.log(`Сервер поднят на ${PORT} порту!`);
 });
-
-// const wsServer = new ws.WebSocketServer({ server: httpServer });
-
-// wsServer.on('connection', (currentClient) => {
-//   currentClient.on('message', (position) => {
-//     const incommingFromPubluc = position.toString('utf-8')
-//     const convertToObj = JSON.parse(incommingFromPubluc)
-//     wsServer.clients.forEach((el) => {
-//       el.send(JSON.stringify(convertToObj));
-//     });
-//     // send(JSON.stringify(convertToObj))
-//   });
-// });

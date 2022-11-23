@@ -1,13 +1,10 @@
-
 const searchForm = document.querySelector('.search');
 const inputGood = document.querySelector('input');
 const newsMainDiv = document.querySelector('.news-container');
-const spinner = document.querySelector("#spinner");
-
+const spinner = document.querySelector('#spinner');
 
 // newsList.style.listStyle = 'none';
 searchForm.addEventListener('submit', async (e) => {
-  
   if (inputGood.value === '' || inputGood.value === 'смерть' || inputGood.value === 'убийство' || inputGood.value === 'война' || inputGood.value === 'тоска' || inputGood.value === 'болезнь') {
     alert('Нееее, введи что нибудь хорошее');
     return;
@@ -18,7 +15,7 @@ searchForm.addEventListener('submit', async (e) => {
   try {
     const apiKey = '6b352aada06441d18359493c93757e14';
 
-    //const apiKey = '69f4633ca37b401eab74f2217a474d14';
+    // const apiKey = '69f4633ca37b401eab74f2217a474d14';
     const topic = inputGood.value;
     const url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
 
@@ -27,7 +24,6 @@ searchForm.addEventListener('submit', async (e) => {
     const response = await fetch(url);
     const result = await response.json();
     result.articles.length = 25;
-   
 
     const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'кокаи', 'застрели', 'Казахста', 'уби', 'кровь', 'Зеленский', 'хабиб', 'мобилизаци', 'ган'];
 
@@ -45,9 +41,7 @@ searchForm.addEventListener('submit', async (e) => {
       }
     }
 
-    //console.log({displayArticles});
-
-
+    // console.log({displayArticles});
 
     displayArticles.length = 15;
 
@@ -75,7 +69,3 @@ searchForm.addEventListener('submit', async (e) => {
     console.error(error);
   }
 });
-
-{/* <button><a className="btn-like">LIKE</a></button> */}
-
-

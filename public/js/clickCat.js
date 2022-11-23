@@ -1,7 +1,4 @@
-
-const btn2 = document.querySelector('#clickCat');
-
-
-btn2.addEventListener('click', () => {
+const btnCat = document.querySelector('#clickCat');
+btnCat.addEventListener('click', () => {
   document.querySelector('.clickCat').style.visibility = 'visible';
 });

@@ -18,12 +18,6 @@ const renderAcc = async (req, res) => {
     data.push(a);
   }
 
-  // console.log(data);
-  // const data = userNewsConnect.map(async (el) => {
-  //  const a = await NewsSave.findAll({ raw: true, where: {id: el.newsId}});
-
-  // });
-
   renderTemplate(Account, { newUser, data }, res);
 };
 

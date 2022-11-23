@@ -1,6 +1,6 @@
 const container = document.querySelector('.home-news-box');
 
-const req = async () => { // ! Прикепел, оказывается гугл блочит запрос
+const req = async () => {
   try {
     const apiKey = '69f4633ca37b401eab74f2217a474d14';
     const url = `
@@ -9,30 +9,13 @@ const req = async () => { // ! Прикепел, оказывается гугл
     const response = await fetch(url);
     const result = await response.json();
 
-    console.log(result);
+    // console.log(result);
 
     const filterBy = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'санкци', 'херсон', 'киев', 'драка'];
 
     const filteredObj = result.articles.filter((emp) => Boolean(!filterBy.some((v) => emp.title.toLowerCase().includes(v.toLowerCase()))));
 
-    console.log(filteredObj);
-
-    // const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'Херсон', 'херсон'];
-
-    // const displayArticles = [];
-    // for (let i = 0; i < result.articles.length; i++) {
-    //   let boo = true;
-    //   for (let j = 0; j < negativeWords.length; j++) {
-    //     if (result.articles[i].title.includes(negativeWords[j])) {
-    //       boo = false;
-    //       break;
-    //     }
-    //   }
-    //   if (boo) {
-    //     displayArticles.push(result.articles[i]);
-    //   }
-    // }
-    // console.log(displayArticles);
+    // console.log(filteredObj);
 
     filteredObj.length = 4;
     filteredObj.forEach((article) => {
