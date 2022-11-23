@@ -17,7 +17,7 @@ module.exports = function Account({ newUser, data }) {
           { data?.map((el) => (
             <div id="card" className="card">
               <a href={el.newsUrl}>
-                <img src={el.imageUrl} className="card-img-main" alt="picture" />
+                <img src={el.imageUrl} className="card-img-main" alt="pic" />
               </a>
 
               <div id="btnPos">

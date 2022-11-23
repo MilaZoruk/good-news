@@ -4,7 +4,6 @@ const Registration = require('../views/Registr');
 const { User } = require('../../db/models');
 
 const renderReg = (req, res) => {
-  // const user = req.session?.user;
   renderTemplate(Registration, null, res);
 };
 
