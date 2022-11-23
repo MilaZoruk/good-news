@@ -2,7 +2,6 @@ const bcrypt = require('bcrypt');
 const renderTemplate = require('../lib/renderTemplate');
 const Login = require('../views/Login');
 const { User } = require('../../db/models');
-const Wrong = require('../views/Wrong')
 
 const renderLogin = (req, res) => {
   renderTemplate(Login, null, res);

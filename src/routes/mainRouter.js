@@ -6,5 +6,5 @@ const { renderMain } = require('../controllers/mainController');
 
 router.get('/', renderMain);
 
-module.exports = router; 
-//поменять все на мейн
+module.exports = router;
+// поменять все на мейн

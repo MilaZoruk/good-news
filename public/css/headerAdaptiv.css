@@ -2,68 +2,58 @@
 
 @media(max-width: 768px) {
 
-.header {
-  height: 70px;
-  padding: 0 28px;
+  .header {
+    height: 70px;
+    padding: 0 28px;
 
-}  
+  }  
 
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 4px;
-  margin-top: 4px;
-}
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    margin-top: 4px;
+  }
 
-.main-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  .main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 400;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+  }
+
+  .nav-link-highlight:link,
+  .nav-link-highlight:visited {
+    padding: 0.8rem 2rem;
   
+  }
+
+  .telegram {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-bottom: 7px;
+
+  }
+
+  .whatsUp {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-bottom: 7px;
+  
+  }
 }
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: antiquewhite;
-  font-weight: 400;
-  font-size: 1.4rem;
-  transition: all 0.3s;
-}
-
-.nav-link-highlight:link,
-.nav-link-highlight:visited {
-  padding: 0.8rem 2rem;
- 
-}
-
-.telegram {
-  width: 25px;
-  height: 25px;
-  margin-left: 15px;
-  margin-bottom: 7px;
-
-}
-
-.whatsUp {
-  width: 25px;
-  height: 25px;
-  margin-left: 15px;
-  margin-bottom: 7px;
- 
-}
-
-
-
-}
-
-
-
-
-
-
-
 
 /* PHONES */
 
@@ -121,20 +111,15 @@
     margin-bottom: 8px;
    
   }
-  
-  
 }
   
-  
-@media (max-width: 420px)
-{
+@media (max-width: 420px) {
 
   .main-nav-list {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-  
-    
+
   }
 
   .header {
@@ -144,9 +129,9 @@
   }  
 
   .nav-link-highlight:link,
-.nav-link-highlight:visited {
-  display: none;
-}
+  .nav-link-highlight:visited {
+    display: none; 
+  }
 }
 
   

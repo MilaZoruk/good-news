@@ -17,23 +17,6 @@ const req = async () => { // ! Прикепел, оказывается гугл
 
     console.log(filteredObj);
 
-    // const negativeWords = ['смерт', 'боль', 'войн', 'печал', 'болезн', 'ран', 'кров', 'героин', 'убийств', 'могил', 'страх', 'труп', 'выброс', 'Херсон', 'херсон'];
-
-    // const displayArticles = [];
-    // for (let i = 0; i < result.articles.length; i++) {
-    //   let boo = true;
-    //   for (let j = 0; j < negativeWords.length; j++) {
-    //     if (result.articles[i].title.includes(negativeWords[j])) {
-    //       boo = false;
-    //       break;
-    //     }
-    //   }
-    //   if (boo) {
-    //     displayArticles.push(result.articles[i]);
-    //   }
-    // }
-    // console.log(displayArticles);
-
     filteredObj.length = 4;
     filteredObj.forEach((article) => {
       const newsDiv = document.createElement('div');

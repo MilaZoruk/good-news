@@ -81,8 +81,7 @@ body {
   display: grid;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
-  align-items: left;
-  
+  /* align-items: left; */
 }
 
 .home-text-box{

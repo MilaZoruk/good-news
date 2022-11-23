@@ -1,5 +1,4 @@
 @media(max-width: 1406px) {
-
   
     .input-group {
 
@@ -8,7 +7,6 @@
     }
 
     .news-container {
-     
       max-width: 75vw;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -22,12 +20,9 @@
 
   }  
 
-
   @media(max-width: 1105px) {
 
-  
     .input-group {
-
      margin-left: 30rem;
       
     }
@@ -48,7 +43,6 @@
 
   @media(max-width: 742px) {
 
-  
     .input-group {
      margin-top: 2rem;
      margin-left: 6rem;
@@ -78,14 +72,9 @@
       border-radius: 20px;
     }
 
-
   }  
 
-
   @media(max-width: 580px) {
-
-  
-  
 
     .input-group {
       margin-top: 2rem;
@@ -115,9 +104,6 @@
 
   @media(max-width: 410px) {
 
-  
-  
-
     .input-group {
       margin-top: 2rem;
       margin-left: 2rem;
@@ -141,7 +127,5 @@
        padding: 8px;
      }
  
-   
-
   }  
 

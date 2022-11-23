@@ -2,6 +2,7 @@
     background: -webkit-linear-gradient(to left, #8f94fb,  #2F2FA2);  
     background:  #2F2FA2;  
 }
+
 /* HEADER */
 .header {
     background-color: transparent ;
@@ -115,8 +116,6 @@
     animation-duration: 11s;
     z-index: 0;
 }
-
-
 
 @keyframes animate {
 
