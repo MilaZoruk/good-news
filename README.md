@@ -45,7 +45,7 @@ Our web application allows users to search positive only news.
 
 **Frontend:** JavaScript, React, Fetch API, HTML, CSS 
 
-**Backend:** PostgreSQL, DBeaver-ce, Sequelize, Session
+**Backend:** Node.js, Express, PostgreSQL, DBeaver-ce, Sequelize, Session
 
 ## AUTHORS
 
