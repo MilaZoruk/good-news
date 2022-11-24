@@ -4,7 +4,7 @@ const req = async () => {
   try {
     const apiKey = '69f4633ca37b401eab74f2217a474d14';
     const url = `
-    http://newsapi.org/v2/everything?q=кино&sortBy=popularity&apiKey=${apiKey}`;
+    https://newsapi.org/v2/everything?q=кино&sortBy=popularity&apiKey=${apiKey}`;
     // https://newsapi.org/v2/top-headlines?country=ru&category=positive&apiKey=${apiKey}`;
     const response = await fetch(url);
     const result = await response.json();

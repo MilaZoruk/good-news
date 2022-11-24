@@ -17,7 +17,7 @@ searchForm.addEventListener('submit', async (e) => {
 
     // const apiKey = '69f4633ca37b401eab74f2217a474d14';
     const topic = inputGood.value;
-    const url = `http://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
+    const url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
 
     // https://newsapi.org/v2/top-headlines?q=${topic}&category=entertainment,technology,science,sports&apiKey=${apiKey}`;
 
