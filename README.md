@@ -6,7 +6,7 @@ Our web application allows users to search positive only news.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/MilaZoruk/good-news/blob/master/demo-screen.gif)
 
 ## RELEASE 0: Home page
 
